@@ -52,9 +52,16 @@
                             <a class="nav-link" href="{{ route('pengaduan')}}">{{__('Tambahkan Aduan') }}</a>
                         </li>
                         @endcan
+                        @can('list-pengaduan')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('listpengaduan')}}">{{__('Daftar Pengaduan') }}</a>
                         </li>
+                        @endcan
+                        @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('listpengaduan1')}}">{{__('Daftar Pengaduan') }}</a>
+                        </li>
+                        @endguest
                         @can('pengaduan-diproses')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('pengaduandiproses')}}">{{__('Pengaduan Masuk') }}</a>
@@ -92,7 +99,7 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
-                        @else
+                            @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>

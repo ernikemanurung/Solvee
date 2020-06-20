@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="judul" class="col-md-2 col-form-label text-md-right">Judul</label>
+                            <label for="judul" class="col-md-2 col-form-label text-md-right">Judul Pengaduan</label>
 
                             <div class="col-md-9">
                                 <input id="judul" type="text" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{$pengaduan->judul}}" required autocomplete="judul" readonly autofocus>
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lokasi_pengaduan" class="col-md-2 col-form-label text-md-right">Lokasi Pengaduan</label>
+                            <label for="lokasi_pengaduan" class="col-md-2 col-form-label text-md-right">Detail Lokasi Kejadian</label>
 
                             <div class="col-md-9">
                                 <input id="lokasi_pengaduan" type="text" class="form-control @error('lokasi_pengaduan') is-invalid @enderror" name="lokasi_pengaduan" value="{{$pengaduan->lokasi_pengaduan}}" readonly required autofocus>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="tanggal" class="col-md-2 col-form-label text-md-right">Tanggal</label>
+                            <label for="tanggal" class="col-md-2 col-form-label text-md-right">Tanggal Kejadian</label>
 
                             <div class="col-md-9">
                                 <input id="tanggal" type="text" class="form-control @error('lokasi_pengaduan') is-invalid @enderror" name="tanggal" value="{{$pengaduan->tanggal}}" readonly required autofocus>
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="deskripsi" class="col-md-2 col-form-label text-md-right">Deskripsi</label>
+                            <label for="deskripsi" class="col-md-2 col-form-label text-md-right">Deskripsi Pengaduan</label>
 
                             <div class="col-md-9">
                                 

@@ -65,5 +65,12 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('tambah-pengaduan', function($user){
             return $user->hasRole('user');
         });
+        Gate::define('list-pengaduan', function($user){
+            return $user->hasAnyRoles(['Pemerintah Desa Sitoluama', 'Pemerintah Kecamatan Laguboti', 'user']);
+        });
+        
+        Gate::define('rekapitulasi-pengaduan', function($user){
+            return $user->hasAnyRoles(['Pemerintah Desa Sitoluama, Pemerintah Kecamatan Laguboti, Admin']);
+        });
     }
 }

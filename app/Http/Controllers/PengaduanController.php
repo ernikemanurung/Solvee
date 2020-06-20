@@ -108,10 +108,25 @@ class PengaduanController extends Controller
     {
         
         $pengaduan = Pengaduan::paginate(15);
+        $user = Auth::user();
+   
         
-        return view('laporanpengaduan.index', compact('pengaduan'));
+        return view('laporanpengaduan.index', compact(['pengaduan', 'user']));
     }
-
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showAll1()
+    {
+        
+        $pengaduan = Pengaduan::paginate(15);
+        $user = Auth::user();
+   
+        
+        return view('masyarakat.show', compact(['pengaduan', 'user']));
+    }
      /**
      * Display a listing of the resource.
      *
@@ -121,8 +136,8 @@ class PengaduanController extends Controller
     {
         
         $pengaduan = Pengaduan::where('status_pengaduan', 'diteruskan')->paginate(15);
-        
-        return view('laporanpengaduan.index', compact('pengaduan'));
+        $user = Auth::user();
+        return view('laporanpengaduan.index', compact(['pengaduan', 'user']));
     }
 
     /**
@@ -134,8 +149,8 @@ class PengaduanController extends Controller
     {
         
         $pengaduan = Pengaduan::where('status_pengaduan', 'belum diproses')->paginate(15);
-        
-        return view('laporanpengaduan.index', compact('pengaduan'));
+        $user = Auth::user();
+        return view('laporanpengaduan.index', compact(['pengaduan', 'user']));
     }
 
     /**

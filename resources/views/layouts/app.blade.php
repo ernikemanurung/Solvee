@@ -63,9 +63,12 @@
                             <a class="nav-link" href="{{ route('pengaduan')}}">{{__('Tambahkan Aduan') }}</a>
                         </li>
                         @endcan
+                        @can('list-pengaduan')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('listpengaduan')}}">{{__('Daftar Pengaduan') }}</a>
                         </li>
+                        @endcan
+                        
                         @can('pengaduan-diproses')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('pengaduandiproses')}}">{{__('Pengaduan Masuk') }}</a>

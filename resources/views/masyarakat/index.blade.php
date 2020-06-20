@@ -252,7 +252,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="lokasi_pengaduan"><b>Lokasi Pengaduan</b></label>
+                                        <label for="lokasi_pengaduan"><b>Detail Lokasi Kejadian</b></label>
                                     </td>
                                     <td>
                                         <div class="input-group input-group-sm">
@@ -267,7 +267,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="tanggal"><b>Tanggal</b></label>
+                                        <label for="tanggal"><b>Tanggal Kejadian</b></label>
                                     </td>
                                     <td>
                                         <div class="input-group input-group-sm">

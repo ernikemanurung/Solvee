@@ -26,6 +26,6 @@ class HomeController extends Controller
         //$request->session()->flash('success', 'testing success flash message');
         //$request->session()->flash('warning', 'testing success warning message');
         //$request->session()->flash('error', 'testing success error message');
-        return view('welcome');
+        return view('welcome1');
     }
 }

@@ -16,47 +16,71 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card-header">Detail Pengaduan {{$pengaduan->id}}</div>
+            <div class="card-header" align="center">Detail Pengaduan {{$pengaduan->id}}</div>
             <div class="card-body">
             <table class="table">
                 <tr>
                     <td>
-                        <h4 class="card-title card-title-primary">{{$pengaduan->nik}}</h4>
+                        <p class="card-text"><b>NIK</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: {{$pengaduan->nik}}</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <h4 class="card-title card-title-primary">{{$pengaduan->nama}}</h4>
+                        <p class="card-text"><b>Nama</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: {{$pengaduan->nama}}</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p class="card-text card-text-danger">{{$pengaduan->tanggal}}</p>
+                        <p class="card-text"><b>Tanggal Kejadian</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: {{$pengaduan->tanggal}}</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p class="card-text">Judul Pengaduan : {{$pengaduan->judul}}</p>
+                        <p class="card-text"><b>Judul Pengaduan</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: {{$pengaduan->judul}}</p>
                     </td>
                 </tr>
                 </tr>
                     <td>
-                        <p class="card-text">Deskripsi : {{$pengaduan->deskripsi}}</p>
+                        <p class="card-text"><b>Deskripsi Pengaduan</b></p>
                     </td>
-                </tr>
-                <tr>
                     <td>
-                        <p class="card-text">Lokasi : {{$pengaduan->provinsi}}, {{$pengaduan->kabupaten}}, {{$pengaduan->kecamatan}}, {{$pengaduan->desa}}.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="card-text">Detail Lokasi : {{$pengaduan->lokasi_pengaduan}}</p>
+                        <p class="card-text">: {{$pengaduan->deskripsi}}</p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p class="card-text">Status Pengaduan : {{$pengaduan->status_pengaduan}}</p>
+                        <p class="card-text"><b>Lokasi Kejadian</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: Provinsi {{$pengaduan->provinsi}}, {{$pengaduan->kabupaten}}, Kecamatan {{$pengaduan->kecamatan}}, Desa {{$pengaduan->desa}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="card-text"><b>Detail Lokasi Kejadian</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: {{$pengaduan->lokasi_pengaduan}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="card-text"><b>Status Pengaduan</b></p>
+                    </td>
+                    <td>
+                        <p class="card-text">: {{$pengaduan->status_pengaduan}}</p>
                     </td>
                 </tr>
                 <tr>

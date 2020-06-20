@@ -13,6 +13,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">NIK</th>
+                        <th scope="col">Nama</th>
                         <th scope="col">Judul</th>
                         <th scope="col">Kategori</th>
                         <th scope="col">Lokasi</th>
@@ -27,25 +28,28 @@
                             <tr>
                                 <th scope="row">{{ $pengaduan->id}}</th>
                                 <td>{{$pengaduan->nik}}</td>
+                                <td>{{$pengaduan->nama}}</td>
                                 <td>{{$pengaduan->judul}}</td>
                                 <td>{{$pengaduan->kategori_pengaduan}}</td>
                                 <td>{{$pengaduan->lokasi_pengaduan}}</td>
                                 <td>{{$pengaduan->status_pengaduan}}</td>
                                 <td>
-                                
-                                    <a href="{{ route('detailpengaduan', $pengaduan->id)}}"><button type="submit" class="btn btn-success">Detail</button>
-                                
+                                    <a href="{{ route('detailpengaduan', $pengaduan->id)}}"><button type="submit" class="btn btn-success">Detail</button>                               
                                 </td>
-                                <td>
-                                    @can('edit-pengaduan')
-                                    <a href="{{ route('editpengaduan', $pengaduan->id)}}"><button type="submit" class="btn btn-secondary">Edit</button>
-                                    @endcan
-                                </td>
-                                <td>
-                                    @can('hapus-pengaduan')
-                                    <a href="{{ route('hapuspengaduan', $pengaduan->id)}}"><button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin menghapus pengaduan ini?')">Hapus</button>
-                                    @endcan
-                                </td>
+
+                                @if($user->name == $pengaduan->nama)
+                                    <td>
+                                        @can('edit-pengaduan')
+                                        <a href="{{ route('editpengaduan', $pengaduan->id)}}"><button type="submit" class="btn btn-secondary">Edit</button>
+                                        @endcan
+                                    </td>
+                                    <td>
+                                        @can('hapus-pengaduan')
+                                        <a href="{{ route('hapuspengaduan', $pengaduan->id)}}"><button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin menghapus pengaduan ini?')">Hapus</button>
+                                        @endcan
+                                    </td>
+
+                                @endif
                                 
 
                                 

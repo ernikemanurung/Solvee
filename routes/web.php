@@ -31,6 +31,7 @@ Route::post('/pengaduan/{id}/edit', 'PengaduanController@update')->name('editpen
 Route::delete('/pengaduan/{id}', 'PengaduanController@destroy')->name('hapuspengaduan');
     
 Route::get('/pengaduan', 'PengaduanController@showAll')->name('listpengaduan');
+Route::get('/pengaduan1', 'PengaduanController@showAll1')->name('listpengaduan1');
 Route::get('/pengaduan/diteruskan', 'PengaduanController@showditeruskan')->name('pengaduanditeruskan');
 Route::get('/pengaduan/diproses', 'PengaduanController@showbelumdiproses')->name('pengaduandiproses');
 Route::post('/pengaduan', 'PengaduanController@store')->name('listpengaduan');

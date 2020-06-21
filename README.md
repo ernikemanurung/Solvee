@@ -8,3 +8,21 @@ Berikut adalah petunjuk untuk instalasi dan penggunaan Aplikasi Solvee sebagai S
 7.	Run projek Solvee (dengan perintah php –S localhost:xxxx –t public). *xxxx adalah port yang digunakan.
 8.	Pada address bar browser, akses url http://localhost:xxxx(port yang digunakan).
 9.	Kemudian Aplikasi Solvee sebagai sarana penyampaian aspirasi dan pengaduan online berbasis web akan terbuka.
+
+Berikut ada email address dan password untuk login ke sistem:
+Sebagai Pemerintah Desa
+	email address 	: wiro@sigurita.composer
+	password		: password
+Sebagai Pemerintah Kecamatan
+	email address	: author@author.composer
+	password		: password
+Sebagai Admin
+	email address	: admin@admin.composer
+	password		: password
+Sebagai masyarakat
+	email address	: user@user.composer
+	password		: password
+	
+	email address	: jaka @sigurita.composer
+	password		: password
+

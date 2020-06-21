@@ -11,18 +11,18 @@ Berikut adalah petunjuk untuk instalasi dan penggunaan Aplikasi Solvee sebagai S
 
 Berikut ada email address dan password untuk login ke sistem:
 1. Sebagai Pemerintah Desa
-	email address 	: wiro@sigurita.composer
+	email address 	: wiro@sigurita.com
 	password		: password
 2. Sebagai Pemerintah Kecamatan
-	email address	: author@author.composer
+	email address	: author@author.com
 	password		: password
 3. Sebagai Admin
-	email address	: admin@admin.composer
+	email address	: admin@admin.com
 	password		: password
 4. Sebagai masyarakat
-	email address	: user@user.composer
+	email address	: user@user.com
 	password		: password
 	
-	email address	: jaka @sigurita.composer
+	email address	: jaka @sigurita.com
 	password		: password
 

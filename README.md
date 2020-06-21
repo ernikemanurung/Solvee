@@ -23,6 +23,6 @@ Berikut ada email address dan password untuk login ke sistem:
 	email address	: user@user.com
 	password		: password
 	
-	email address	: jaka @sigurita.com
+	email address	: jaka@sigurita.com
 	password		: password
 
